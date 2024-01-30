@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SwiftCase Technical Challenge
+
+## Project Overview
+
+The SwiftCase Technical Challenge involves the development of a web interface to interact with product tasks. The webpage allows users to retrieve and process task-related data through API integrations and user inputs.
+
+## Deployment
+
+The app is deployed using [Vercel](https://vercel.com/) and can be accessed at [App URL](#).
+
+## Features
+
+**Form and Validation:**
+
+1. Create a webpage with a form to enter the Product Status ID and a button to make the request.
+2. Validate the Product Status ID on button click and display an error if not entered.
+3. Validate that the Product Status ID is an integer and display an error if not.
+
+**User Interface:**
+
+4. Add an image in the bottom right of the page.
+5. Add a navbar across the top with links to external websites.
+
+**API Integration and Data Processing:**
+
+6. Use API endpoints to retrieve task IDs based on a workflow status.
+7. Fetch details of each task from the API.
+8. Store data from each request in an array.
+
+**Data Manipulation:**
+
+9. Sum the cost data for each non-cancelled task.
+10. Format the sum as £X.XX.
+11. Format date columns as Unix timestamps.
+
+**Output:**
+
+12. Display in a modal.
+13. Close the modal.
+
+## Project Structure
+
+```plaintext
+/src
+|-- components
+|   |-- ui
+|       |-- button.tsx
+|       |-- form.tsx
+|       |-- input.tsx
+|       |-- modal.tsx
+|       |-- mode-toggle.tsx
+|       |-- navbar.tsx
+|       |-- navigation-menu.tsx
+|       |-- product-form.tsx
+|       |-- separator.tsx
+|-- pages
+|   |-- index.tsx
+|-- styles
+|   |-- ...
+|-- README.md
+```
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the project locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the Repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    git clone https://github.com/your-username/your-repo.git
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install Dependencies:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    cd your-repo
+    npm install
+    ```
 
-## Learn More
+3. **Run the Development Server:**
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npx next dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+- Enter a valid Product Status ID in the form.
+- Click the "Submit" button to fetch and process data.
+- View results in a modal
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/) - React framework for building web applications.
+- [Shadcn UI](https://ui.shadcn.com/) - A custom UI library for enhancing the visual design of the application.
+- [Zod](https://github.com/colinhacks/zod) - TypeScript-first schema declaration and validation library.
+- [React Hook Form](https://react-hook-form.com/) - Performant, flexible, and extensible forms with easy-to-use React hooks.
+- [next-themes](https://github.com/pacocoursey/next-themes) - A Next.js plugin for theme management, enabling easy theme switching.
+- [Axios](https://axios-http.com/) - Promise-based HTTP client for the browser and Node.js.
+
