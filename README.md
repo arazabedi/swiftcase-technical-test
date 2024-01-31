@@ -6,7 +6,7 @@ The SwiftCase Technical Challenge involves the development of a web interface to
 
 ## Deployment
 
-The app is deployed using [Vercel](https://vercel.com/) and can be accessed at [App URL](#).
+The app is deployed using [Vercel](https://vercel.com/) and can be accessed at [https://swiftcase-technical-test.vercel.app/](https://swiftcase-technical-test.vercel.app/).
 
 ## Features
 
